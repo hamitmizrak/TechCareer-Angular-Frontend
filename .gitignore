@@ -1,2 +1,4 @@
 # Special 
 /node_modules
+
+*.java
