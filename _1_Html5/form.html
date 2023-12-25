@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Start Code -->
+    <h1>Form Register</h1>
+    <!-- onsubmit="event.preventDefault()" -->
+    <form action="#" method="get" autocomplete="on">
+
+        <!-- NAME -->
+        <div class="form_object">
+            <label for="uname">ADINIZ:</label>
+            <input type="text" name="uname" id="uname" placeholder="Adınızı giriniz" required title="Adınızı giriniz"
+                autofocus>
+            <p>Adınızı girmediniz</p>
+        </div>
+
+        <!-- SURNAME -->
+        <div class="form_object">
+            <label for="usurname">SOYADINIZ:</label>
+            <input type="text" name="usurname" id="usurname" placeholder="Soyadınızı giriniz" required
+                title="Soyadınızı giriniz">
+            <p>Soyadınızı girmediniz</p>
+        </div>
+
+        <!-- EMAİL -->
+        <div class="form_object">
+            <label for="uemail">EMAİLİNİZ:</label>
+            <input type="email" name="uemail" id="uemail" placeholder="Email giriniz" required
+                title="Email giriniz">
+            <p>Email girmediniz</p>
+        </div>
+
+        <!-- PASSWORD -->
+        <div class="form_object">
+            <label for="upassword">ŞİFRENİZ:</label>
+            <input type="password" name="upassword" id="upassword" placeholder="Şifrenizi giriniz" required
+                title="Şifrenizi giriniz">
+            <p>Şifrenizi girmediniz</p>
+        </div>
+
+        <!-- GENDER -->
+        <div class="form_object">
+            <label>CİNSİYET:</label>
+            <input type="radio" name="ugender" id="female" checked>Bayan
+            <input type="radio" name="ugender" id="male">Erkek
+        </div>
+
+        <!-- ABILITY -->
+        <div class="form_object">
+            <label>YETENEKLER:</label>
+            <input type="checkbox" name="angular" id="angular" checked>Angular
+            <input type="checkbox" name="html5" id="html5" checked>Html5
+            <input type="checkbox" name="css3" id="css3" checked>Css3
+            <input type="checkbox" name="bootstrap5" id="bootstrap5" checked>Bootstrap5
+            <input type="checkbox" name="javascript" id="javascript" checked>JavaScript
+            <input type="checkbox" name="java" id="java" >Java
+            <input type="checkbox" name="webservices" id="webservices" >Webservices
+        </div>
+
+        <!-- SUBMIT -->
+        <div class="form_object">
+            <label>GÖNDER:</label>
+            <input type="reset" name="reset" id="reset"  value="Temizle" title="Temizle giriniz">
+            <button type="submit" name="submit" id="submit"   title="Gönder giriniz"> Gönder</button>
+        </div>
+    </form>
+    <!-- End Code -->
+</body>
+
+</html>
