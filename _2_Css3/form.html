@@ -28,17 +28,16 @@
 
 <body>
     <!-- Start Code -->
-    <h1>Form Register</h1>
-    <h6>Register UI</h6>
+    <h1 id="form_register_heading">form register</h1>
+    <h6 class="form_register_child">Register UI</h6>
     <!-- onsubmit="event.preventDefault()" -->
-    <form action="#" method="get" autocomplete="on">
-
+    <form action="#" method="get" autocomplete="on" id="form_id" class="form_class">
         <!-- NAME -->
         <div class="form_object">
             <label for="uname">ADINIZ:</label>
             <input type="text" name="uname" id="uname" placeholder="Adınızı giriniz" required title="Adınızı giriniz"
                 autofocus>
-            <p>Adınızı girmediniz</p>
+            <p class="validation_input" id="validation_name">Adınızı girmediniz</p>
         </div>
 
         <!-- SURNAME -->
@@ -46,14 +45,14 @@
             <label for="usurname">SOYADINIZ:</label>
             <input type="text" name="usurname" id="usurname" placeholder="Soyadınızı giriniz" required
                 title="Soyadınızı giriniz">
-            <p>Soyadınızı girmediniz</p>
+            <p class="validation_input"  id="validation_surname">Soyadınızı girmediniz</p>
         </div>
 
         <!-- EMAİL -->
         <div class="form_object">
             <label for="uemail">EMAİLİNİZ:</label>
             <input type="email" name="uemail" id="uemail" placeholder="Email giriniz" required title="Email giriniz">
-            <p>Email girmediniz</p>
+            <p class="validation_input"  id="validation_email">Email girmediniz</p>
         </div>
 
         <!-- PASSWORD -->
@@ -61,7 +60,7 @@
             <label for="upassword">ŞİFRENİZ:</label>
             <input type="password" name="upassword" id="upassword" placeholder="Şifrenizi giriniz" required
                 title="Şifrenizi giriniz">
-            <p>Şifrenizi girmediniz</p>
+            <p class="validation_input"  id="validation_password">Şifrenizi girmediniz</p>
         </div>
 
         <!-- GENDER -->

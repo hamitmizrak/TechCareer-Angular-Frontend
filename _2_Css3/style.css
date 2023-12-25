@@ -6,10 +6,9 @@ Date:20/12/ 2023
 
 /* ROOT */
 :root {
-    --template-bg-color: #f2f2f2;
-    --template-color: #484848;
+    --template-bg-color: #ffffff;
+    --template-color: #000000;
 }
-
 
 /* COMMON */
 * {
@@ -29,10 +28,82 @@ body {
     font-family: 'Roboto Condensed', sans-serif;
 }
 
-ul{
+ul {
     list-style-type: none;
 }
 
-a{
+a {
     text-decoration: none;
+}
+
+label{
+    display:block!important;
+  
+    margin: 0.5rem 0
+}
+
+
+/* ================================================================= */
+
+#form_id{
+    background-color: var(--template-color);
+    opacity: 0.8;
+    padding:1rem 0;
+    width: 80%;
+}
+ /* TEXT */
+ #form_register_heading{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: .5rem;
+ }
+
+ .form_register_child{
+    text-align: center;
+    text-transform: capitalize;
+    font-size:1.2rem;
+    margin-bottom: .5rem;
+ }
+
+ /* INPUT ALL OBJECT */
+ .form_object{
+    margin: 0 auto;
+    width: 75%;
+    padding: 1rem;
+    border-radius: 0.4rem;
+    color: var(--template-bg-color);
+    box-shadow: 0 0 0.5rem 0.1rem var(--template-bg-color);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+ }
+
+/*INPUT*/
+#form_id .form_object input:first-child{
+    display:none;
+}
+
+
+input[type="text"],input[type="password"],input[type="email"] {
+    /* 
+    border: none;
+    outline: none; 
+    */
+    border-radius:0.4rem;
+    display: block;
+    padding:0.4rem;
+    padding-left:2rem;
+    transition: all 0.3s ease-in-out;
+}
+
+input[type="text"]:hover,input[type="password"]:hover,input[type="email"]:hover{
+    background-color: var(--template-color);
+    color: var(--template-bg-color );
+    padding:0.6rem;
+}
+
+.validation_input{
+    color:red;
+    display: none;
 }
