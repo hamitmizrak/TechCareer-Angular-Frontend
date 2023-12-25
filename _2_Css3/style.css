@@ -1,0 +1,38 @@
+/*
+Author: Hamit Mızrak
+Project Name: Form
+Date:20/12/ 2023
+*/
+
+/* ROOT */
+:root {
+    --template-bg-color: #f2f2f2;
+    --template-color: #484848;
+}
+
+
+/* COMMON */
+* {
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 20px;
+}
+
+body {
+    background-color: var(--template-bg-color);
+    color: var(--template-color);
+    position: relative;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
