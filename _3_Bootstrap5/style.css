@@ -1,0 +1,211 @@
+/*
+Author: Hamit Mızrak
+Project Name: Form
+Date:20/12/ 2023
+*/
+
+/* ROOT */
+:root {
+    --template-bg-color: #f2eaea;
+    --template-color: #f4ecec;
+    --form-bg-color: #ffffff;
+}
+
+/* COMMON */
+* {
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 20px;
+}
+
+body {
+    color: var(--template-color);
+    position: relative;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+label {
+    display: block;
+    margin: 0.5rem 0
+}
+
+/* ================================================================= */
+/* CONTAINER */
+.register_container {
+    width: 100%;
+    /* height: 95vh; */
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    text-align: center;
+    /* overflow: hidden; */
+    background-color: var(--template-bg-color);
+}
+
+/* FORM */
+.register_form {
+    width: 30rem;
+    /* height: 25rem; */
+    background: var(--form-bg-color);
+    border-radius: 2.7rem;
+    padding: 3rem;
+    box-shadow: 13px 13px 18px #41505d, -13px -13px 21px white;
+    -webkit-box-shadow: 13px 13px 18px #41505d, -13px -13px 21px white;
+    -moz-box-shadow: 13px 13px 18px #41505d, -13px -13px 21px white;
+}
+
+.input_div{
+    position: relative;
+}
+
+/* LOGO */
+.register_logo {
+    height: 7rem;
+    width: 12rem;
+    background: url('../img/logo.png') no-repeat center center/cover;
+    margin: auto;
+    background-size: cover;
+    border-radius: 1.2rem;
+    box-shadow: 6px 6px 9px #425161, -6px -8px 9px white;
+    -webkit-box-shadow: 6px 6px 9px #425161, -6px -8px 9px white;
+    -moz-box-shadow: 6px 6px 9px #425161, -6px -8px 9px white;
+}
+
+/* TITLE */
+.register_title {
+    font-size: 1.5rem !important;
+    text-transform: capitalize;
+    margin: 1rem 0;
+    letter-spacing: 0.5rem;
+    font-weight: 500;
+    margin: 2rem 0;
+    color: blueviolet;
+}
+
+/* FORM CONTAINER */
+.form_container {
+    margin-top: 1rem;
+}
+
+/* ICON */
+.my_icon_class {
+    color: rgb(20, 61, 223);
+    position: absolute;
+    left: 1rem;
+    margin-top: 1rem;
+}
+
+/* BUTTON,INPUT */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+button {
+    display: block;
+    width: 100%;
+    border: none;
+    padding: 0;
+    outline: none;
+}
+
+/* INPUT */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    height: 3rem;
+    background-color: rgba(255, 255, 255, .5);
+    margin-bottom: 2rem;
+    padding: 1rem;
+    /* padding-left:2rem; */
+    border-radius: 3.2rem;
+    padding-left: 2.5rem;
+    transition: 1s ease-in-out;
+    box-shadow: inset 7px 7px 7px #cbced2, inset -7px -7px 7px white;
+    -webkit-box-shadow: inset 7px 7px 7px #cbced2, inset -7px -7px 7px white;
+    -moz-box-shadow: inset 7px 7px 7px #cbced2, inset -7px -7px 7px white;
+}
+
+/* INPUT PLACEHOLDER*/
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+input[type="password"]::placeholder {
+    color: rgb(150, 142, 142);
+    /* font-size: 1.2rem; */
+    /* font-weight: 500; */
+    /* letter-spacing: 0.1rem; */
+    padding-left: 2.1rem;
+}
+
+/* INPUT HOVER*/
+input[type="text"]:hover,
+input[type="password"]:hover,
+input[type="email"]:hover {
+    background-color: var(--template-color);
+    color: var(--template-bg-color);
+    padding: 0.6rem;
+    transition: 0.8s ease-in-out;
+}
+
+/* INPUT FOCUS*/
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus {
+    padding-left: 5rem;
+    color: black;
+}
+
+/*GENDER RADIO */
+.register_inline input {
+    display: inline-block;
+    margin-bottom: 2rem;
+}
+
+/* INPUT VALIDATION */
+
+.validation_input_span{
+   
+}
+
+input:user-invalid {
+    border: 0.2rem solid rgba(255, 49, 49, 0.9);
+}
+
+input+.validation_input_span {
+    color: rgb(252, 88, 88);
+    display: none;
+}
+
+input:user-invalid+.validation_input_span {
+    display: inline;
+}
+
+/* SUBMIT RESET */
+/* #reset,
+#submit {
+    margin-top: 1.2rem;
+    border-radius: 2.4rem;
+    transition: 0.9s;
+    cursor: pointer;
+    background-color: #0d72f5;
+    color: white;
+    height: 2rem;
+    box-shadow: 7px 7px 7px #bec9d2, -7px -7px 5px white;
+    -webkit-box-shadow: 7px 7px 7px #bec9d2, -7px -7px 5px white;
+    -moz-box-shadow: 7px 7px 7px #bec9d2, -7px -7px 5px white;
+} */
+
+#reset:hover,
+#submit:hover {
+    box-shadow: none;
+}
