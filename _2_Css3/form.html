@@ -23,6 +23,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,200&display=swap"
         rel="stylesheet">
 
+          <!-- Bootstrap CSS v5.2.1 -->
+          <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+          crossorigin="anonymous"
+      />
+
     <!-- External CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
@@ -75,7 +83,6 @@
                         <p class="validation_input" id="validation_email">Email girmediniz</p>
                     </div>
 
-
                     <!-- PASSWORD -->
                     <div class="input_div">
                         <i class="my_icon_class fa-solid fa-unlock-keyhole"></i>
@@ -86,31 +93,67 @@
                     </div>
 
                     <!-- GENDER -->
-
                     <div class="register_inline">
-                        <input type="radio" name="ugender" id="female" checked>Bayan
-                        <input type="radio" name="ugender" id="male">Erkek
+                        <input class="form-check-input" type="radio" name="ugender" id="female" checked> <span style="color:black; margin-right:2rem;">Bayan</span> 
+                        <input class="form-check-input" type="radio" name="ugender" id="male"> <span  style="color:black">Erkek</span> 
                     </div>
-
+                    
                     <!-- ABILITY -->
                     <div class="register_inline">
-                        <input type="checkbox" name="angular" id="angular" checked>Angular
+                        <!-- <input type="checkbox" name="angular" id="angular" checked>Angular
                         <input type="checkbox" name="html5" id="html5" checked>Html5
                         <input type="checkbox" name="css3" id="css3" checked>Css3
                         <input type="checkbox" name="bootstrap5" id="bootstrap5" checked>Bootstrap5
                         <input type="checkbox" name="javascript" id="javascript" checked>JavaScript
                         <input type="checkbox" name="java" id="java">Java
                         <input type="checkbox" name="webservices" id="webservices">Webservices
+                   -->
+                        <!-- <input type="list" name="tech">
+                        <datalist id="list">
+                            <option value="Angular">
+                            <option value="Html5">
+                            <option value="Css3">
+                        </datalist> -->
                     </div>
 
                     <!-- SUBMIT -->
-                    <button type="reset" name="reset" id="reset" title="Temizle giriniz">Temizle</button>
-                    <button type="submit" name="submit" id="submit" title="Gönder giriniz"> Gönder</button>
-
+                        <div class="row">
+                            <div class="col-sm-12 col-md-6 col-lg-6">
+                                <button 
+                                type="reset" 
+                                class="btn btn-outline-danger rounded mb-2 btn-sm p-2 shadow text-uppercase  border-start" 
+                                name="reset" 
+                                id="reset" 
+                                title="Temizle giriniz">Temizle</button>
+                    
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg-6">
+                                <button 
+                                type="submit" 
+                                class="btn btn-outline-primary btn-sm rounded p-2 shadow  text-uppercase" 
+                                name="submit" 
+                                id="submit" 
+                                title="Gönder giriniz"> Gönder</button>
+                        </div>
+                    </div>  <!-- end row -->
                 </div>
             </form>
         </div>
     </div> <!-- container_register-->
+
+
+ <!-- Bootstrap JavaScript Libraries -->
+ <script
+ src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+ integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+ crossorigin="anonymous"
+></script>
+
+<script
+ src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+ integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+ crossorigin="anonymous"
+></script>
     <!-- End Code -->
 </body>
 

@@ -6,8 +6,9 @@ Date:20/12/ 2023
 
 /* ROOT */
 :root {
-    --template-bg-color: #ffffff;
+    --template-bg-color: #f2eaea;
     --template-color: #f4ecec;
+    --form-bg-color:#ffffff;
 }
 
 /* COMMON */
@@ -45,7 +46,7 @@ label {
 /* CONTAINER */
 .register_container {
     width: 100%;
-     height: 95vh; 
+    /* height: 95vh; */
     display: flex;
     justify-content: center;
     place-items: center;
@@ -56,10 +57,9 @@ label {
 
 /* FORM */
 .register_form {
-    position: relative;
     width: 30rem;
     /* height: 25rem; */
-    background: var(--template-bg-color);
+    background: var(--form-bg-color);
     border-radius: 2.7rem;
     padding: 3rem;
     box-shadow: 13px 13px 18px #41505d, -13px -13px 21px white;
@@ -72,7 +72,7 @@ label {
     height: 7rem;
     width: 12rem;
     background: url('../img/logo.png') no-repeat center center/cover;
-    margin: auto;
+    margin:  auto;
     background-size: cover;
     border-radius: 1.2rem;
     box-shadow: 6px 6px 9px #425161, -6px -8px 9px white;
@@ -82,7 +82,7 @@ label {
 
 /* TITLE */
 .register_title {
-    font-size: 1.5rem;
+    font-size: 1.5rem!important;
     text-transform: capitalize;
     margin: 1rem 0;
     letter-spacing: 0.5rem;
@@ -97,12 +97,12 @@ label {
 }
 
 /* ICON */
-.my_icon_class{
-    color:rgb(20, 61, 223);
+.my_icon_class {
+    color: rgb(20, 61, 223);
     position: absolute;
-    left:4rem;
-    margin-top:1rem;
-} 
+    left: 4rem;
+    margin-top: 1rem;
+}
 
 /* BUTTON,INPUT */
 input[type="text"],
@@ -143,9 +143,11 @@ input[type="password"]::placeholder {
 
 .register_inline input {
     display: inline-block;
+    margin-bottom:2rem;
 }
 
-#reset,
+/* SUBMIT RESET */
+/* #reset,
 #submit {
     margin-top: 1.2rem;
     border-radius: 2.4rem;
@@ -157,7 +159,7 @@ input[type="password"]::placeholder {
     box-shadow: 7px 7px 7px #bec9d2, -7px -7px 5px white;
     -webkit-box-shadow: 7px 7px 7px #bec9d2, -7px -7px 5px white;
     -moz-box-shadow: 7px 7px 7px #bec9d2, -7px -7px 5px white;
-}
+} */
 
 #reset:hover,
 #submit:hover {
