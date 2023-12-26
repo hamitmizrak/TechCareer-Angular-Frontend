@@ -172,6 +172,11 @@ input[type="email"]:focus {
 }
 
 /* INPUT VALIDATION */
+
+.validation_input_span{
+   
+}
+
 input:user-invalid {
     border: 0.2rem solid rgba(255, 49, 49, 0.9);
 }
