@@ -7,7 +7,7 @@ Date:20/12/ 2023
 /* ROOT */
 :root {
     --template-bg-color: #ffffff;
-    --template-color: #000000;
+    --template-color: #f4ecec;
 }
 
 /* COMMON */
@@ -22,7 +22,6 @@ html {
 }
 
 body {
-    background-color: var(--template-bg-color);
     color: var(--template-color);
     position: relative;
     font-family: 'Roboto Condensed', sans-serif;
@@ -37,64 +36,118 @@ a {
 }
 
 label {
-    display: block !important;
+    display: block;
     margin: 0.5rem 0
 }
 
 /* ================================================================= */
-#form_id {
-    background-color: var(--template-color);
-    opacity: 0.8;
-    padding: 1rem 0;
-    width: 80%;
-}
 
-/* TEXT */
-#form_register_heading {
+/* CONTAINER */
+.register_container {
+    width: 100%;
+    /* height: 95vh; */
+    display: flex;
+    justify-content: center;
+    place-items: center;
     text-align: center;
+    /* overflow: hidden; */
+    background-color: var(--template-bg-color);
+}
+
+/* FORM */
+.register_form {
+    position: relative;
+    width: 30rem;
+    /* height: 25rem; */
+    background: var(--template-bg-color);
+    border-radius: 2.7rem;
+    padding: 3rem;
+    box-shadow: 13px 13px 18px #41505d, -13px -13px 21px white;
+}
+
+/* LOGO */
+.register_logo {
+    height: 7rem;
+    width: 12rem;
+    background: url('../img/logo.png') no-repeat center center/cover;
+    box-shadow: 6px 6px 9px #425161, -6px -8px 9px white;
+    margin: auto;
+    background-size: cover;
+    border-radius: 1.2rem;
+}
+
+/* TITLE */
+.register_title {
+    font-size: 1.5rem;
     text-transform: capitalize;
-    font-size: 2rem;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin-bottom: .5rem;
+    margin: 1rem 0;
+    letter-spacing: 0.5rem;
+    font-weight: 500;
+    margin: 2rem 0;
+    color: blueviolet
 }
 
-.form_register_child {
-    text-align: center;
-    text-transform: capitalize;
-    font-size: 1.2rem;
-    margin-bottom: .5rem;
+/* FORM CONTAINER */
+.form_container {
+    margin-top: 1rem;
 }
 
-/* INPUT ALL OBJECT */
-.form_object {
-    margin: 0 auto;
-    width: 75%;
-    padding: 1rem;
-    border-radius: 0.4rem;
-    color: var(--template-bg-color);
-    box-shadow: 0 0 0.5rem 0.1rem var(--template-bg-color);
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-}
-
-/*INPUT*/
-#form_id .form_object input:first-child {
-    display: none;
-}
-
-
+/* BUTTON,INPUT */
 input[type="text"],
+input[type="email"],
 input[type="password"],
-input[type="email"] {
-    /* 
-    border: none;
-    outline: none; 
-    */
-    border-radius: 0.4rem;
+button {
     display: block;
-    padding: 0.4rem;
-    padding-left: 2rem;
-    transition: all 0.3s ease-in-out;
+    width: 100%;
+    border: none;
+    padding: 0;
+    outline: none;
+}
+
+/* INPUT */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    height: 3rem;
+    background-color: rgba(255, 255, 255, .5);
+    margin-bottom: 2rem;
+    padding: 1rem;
+    /* padding-left:2rem; */
+    box-shadow: inset 7px 7px 7px #cbced2, inset -7px -7px 7px white;
+    border-radius: 3.2rem;
+}
+
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+input[type="password"]::placeholder {
+    color: rgb(150, 142, 142);
+    /* font-size: 1.2rem; */
+    /* font-weight: 500; */
+    /* letter-spacing: 0.1rem; */
+    padding-left: 2.1rem;
+}
+
+.register_inline input {
+    display: inline-block;
+}
+
+#reset,
+#submit {
+    margin-top: 1.2rem;
+    border-radius: 2.4rem;
+    transition: 0.9s;
+    cursor: pointer;
+    background-color: #0d72f5;
+    color: white;
+    box-shadow: 7px 7px 7px #bec9d2, -7px -7px 5px white;
+    -webkit-box-shadow: 7px 7px 7px #bec9d2, -7px -7px 5px white;
+    -moz-box-shadow: 7px 7px 7px #bec9d2, -7px -7px 5px white;
+    height: 2rem;
+}
+
+#reset:hover,
+#submit:hover {
+    box-shadow: none;
 }
 
 input[type="text"]:hover,
@@ -103,6 +156,11 @@ input[type="email"]:hover {
     background-color: var(--template-color);
     color: var(--template-bg-color);
     padding: 0.6rem;
+    transition: 0.8s ease-in-out;
+}
+
+input[type="checkbox"] {
+    font-size: 5rem;
 }
 
 .validation_input {
