@@ -8,7 +8,7 @@ Date:20/12/ 2023
 :root {
     --template-bg-color: #f2eaea;
     --template-color: #f4ecec;
-    --form-bg-color:#ffffff;
+    --form-bg-color: #ffffff;
 }
 
 /* COMMON */
@@ -66,12 +66,16 @@ label {
     -moz-box-shadow: 13px 13px 18px #41505d, -13px -13px 21px white;
 }
 
+.input_div{
+    position: relative;
+}
+
 /* LOGO */
 .register_logo {
     height: 7rem;
     width: 12rem;
     background: url('../img/logo.png') no-repeat center center/cover;
-    margin:  auto;
+    margin: auto;
     background-size: cover;
     border-radius: 1.2rem;
     box-shadow: 6px 6px 9px #425161, -6px -8px 9px white;
@@ -81,13 +85,13 @@ label {
 
 /* TITLE */
 .register_title {
-    font-size: 1.5rem!important;
+    font-size: 1.5rem !important;
     text-transform: capitalize;
     margin: 1rem 0;
     letter-spacing: 0.5rem;
     font-weight: 500;
     margin: 2rem 0;
-    color: blueviolet
+    color: blueviolet;
 }
 
 /* FORM CONTAINER */
@@ -99,7 +103,7 @@ label {
 .my_icon_class {
     color: rgb(20, 61, 223);
     position: absolute;
-    left: 4rem;
+    left: 1rem;
     margin-top: 1rem;
 }
 
@@ -131,6 +135,7 @@ input[type="password"] {
     -webkit-box-shadow: inset 7px 7px 7px #cbced2, inset -7px -7px 7px white;
     -moz-box-shadow: inset 7px 7px 7px #cbced2, inset -7px -7px 7px white;
 }
+
 /* INPUT PLACEHOLDER*/
 input[type="text"]::placeholder,
 input[type="email"]::placeholder,
@@ -156,14 +161,14 @@ input[type="email"]:hover {
 input[type="text"]:focus,
 input[type="password"]:focus,
 input[type="email"]:focus {
-   padding-left:5rem;
-   color:black;
+    padding-left: 5rem;
+    color: black;
 }
 
 /*GENDER RADIO */
 .register_inline input {
     display: inline-block;
-    margin-bottom:2rem;
+    margin-bottom: 2rem;
 }
 
 /* INPUT VALIDATION */
@@ -176,7 +181,7 @@ input+.validation_input_span {
     display: none;
 }
 
-input:user-invalid+.validation_input_span{
+input:user-invalid+.validation_input_span {
     display: inline;
 }
 
@@ -199,4 +204,3 @@ input:user-invalid+.validation_input_span{
 #submit:hover {
     box-shadow: none;
 }
-
