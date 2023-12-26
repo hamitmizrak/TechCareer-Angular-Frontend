@@ -42,7 +42,6 @@ label {
 }
 
 /* ================================================================= */
-
 /* CONTAINER */
 .register_container {
     width: 100%;
@@ -126,11 +125,13 @@ input[type="password"] {
     padding: 1rem;
     /* padding-left:2rem; */
     border-radius: 3.2rem;
+    padding-left: 2.5rem;
+    transition: 1s ease-in-out;
     box-shadow: inset 7px 7px 7px #cbced2, inset -7px -7px 7px white;
     -webkit-box-shadow: inset 7px 7px 7px #cbced2, inset -7px -7px 7px white;
     -moz-box-shadow: inset 7px 7px 7px #cbced2, inset -7px -7px 7px white;
 }
-
+/* INPUT PLACEHOLDER*/
 input[type="text"]::placeholder,
 input[type="email"]::placeholder,
 input[type="password"]::placeholder {
@@ -141,9 +142,42 @@ input[type="password"]::placeholder {
     padding-left: 2.1rem;
 }
 
+/* INPUT HOVER*/
+input[type="text"]:hover,
+input[type="password"]:hover,
+input[type="email"]:hover {
+    background-color: var(--template-color);
+    color: var(--template-bg-color);
+    padding: 0.6rem;
+    transition: 0.8s ease-in-out;
+}
+
+/* INPUT FOCUS*/
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus {
+   padding-left:5rem;
+   color:black;
+}
+
+/*GENDER RADIO */
 .register_inline input {
     display: inline-block;
     margin-bottom:2rem;
+}
+
+/* INPUT VALIDATION */
+input:user-invalid {
+    border: 0.2rem solid rgba(255, 49, 49, 0.9);
+}
+
+input+.validation_input_span {
+    color: rgb(252, 88, 88);
+    display: none;
+}
+
+input:user-invalid+.validation_input_span{
+    display: inline;
 }
 
 /* SUBMIT RESET */
@@ -166,35 +200,3 @@ input[type="password"]::placeholder {
     box-shadow: none;
 }
 
-
-input[type="text"],
-input[type="password"],
-input[type="email"] {
-   padding-left: 2.5rem;
-   transition: 1s ease-in-out;
-}
-
-input[type="text"]:hover,
-input[type="password"]:hover,
-input[type="email"]:hover {
-    background-color: var(--template-color);
-    color: var(--template-bg-color);
-    padding: 0.6rem;
-    transition: 0.8s ease-in-out;
-}
-
-input[type="text"]:focus,
-input[type="password"]:focus,
-input[type="email"]:focus {
-   padding-left:5rem;
-   color:black;
-}
-
-input[type="checkbox"] {
-    font-size: 5rem;
-}
-
-.validation_input {
-    color: red;
-    display: none;
-}
