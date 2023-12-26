@@ -45,7 +45,7 @@ label {
 /* CONTAINER */
 .register_container {
     width: 100%;
-    /* height: 95vh; */
+     height: 95vh; 
     display: flex;
     justify-content: center;
     place-items: center;
@@ -63,6 +63,8 @@ label {
     border-radius: 2.7rem;
     padding: 3rem;
     box-shadow: 13px 13px 18px #41505d, -13px -13px 21px white;
+    -webkit-box-shadow: 13px 13px 18px #41505d, -13px -13px 21px white;
+    -moz-box-shadow: 13px 13px 18px #41505d, -13px -13px 21px white;
 }
 
 /* LOGO */
@@ -70,10 +72,12 @@ label {
     height: 7rem;
     width: 12rem;
     background: url('../img/logo.png') no-repeat center center/cover;
-    box-shadow: 6px 6px 9px #425161, -6px -8px 9px white;
     margin: auto;
     background-size: cover;
     border-radius: 1.2rem;
+    box-shadow: 6px 6px 9px #425161, -6px -8px 9px white;
+    -webkit-box-shadow: 6px 6px 9px #425161, -6px -8px 9px white;
+    -moz-box-shadow: 6px 6px 9px #425161, -6px -8px 9px white;
 }
 
 /* TITLE */
@@ -91,6 +95,14 @@ label {
 .form_container {
     margin-top: 1rem;
 }
+
+/* ICON */
+.my_icon_class{
+    color:rgb(20, 61, 223);
+    position: absolute;
+    left:4rem;
+    margin-top:1rem;
+} 
 
 /* BUTTON,INPUT */
 input[type="text"],
@@ -113,8 +125,10 @@ input[type="password"] {
     margin-bottom: 2rem;
     padding: 1rem;
     /* padding-left:2rem; */
-    box-shadow: inset 7px 7px 7px #cbced2, inset -7px -7px 7px white;
     border-radius: 3.2rem;
+    box-shadow: inset 7px 7px 7px #cbced2, inset -7px -7px 7px white;
+    -webkit-box-shadow: inset 7px 7px 7px #cbced2, inset -7px -7px 7px white;
+    -moz-box-shadow: inset 7px 7px 7px #cbced2, inset -7px -7px 7px white;
 }
 
 input[type="text"]::placeholder,
@@ -139,10 +153,10 @@ input[type="password"]::placeholder {
     cursor: pointer;
     background-color: #0d72f5;
     color: white;
+    height: 2rem;
     box-shadow: 7px 7px 7px #bec9d2, -7px -7px 5px white;
     -webkit-box-shadow: 7px 7px 7px #bec9d2, -7px -7px 5px white;
     -moz-box-shadow: 7px 7px 7px #bec9d2, -7px -7px 5px white;
-    height: 2rem;
 }
 
 #reset:hover,
