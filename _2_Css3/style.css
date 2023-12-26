@@ -166,6 +166,14 @@ input[type="password"]::placeholder {
     box-shadow: none;
 }
 
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+   padding-left: 2.5rem;
+   transition: 1s ease-in-out;
+}
+
 input[type="text"]:hover,
 input[type="password"]:hover,
 input[type="email"]:hover {
@@ -173,6 +181,13 @@ input[type="email"]:hover {
     color: var(--template-bg-color);
     padding: 0.6rem;
     transition: 0.8s ease-in-out;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus {
+   padding-left:5rem;
+   color:black;
 }
 
 input[type="checkbox"] {

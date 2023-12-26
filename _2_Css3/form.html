@@ -4,6 +4,8 @@
 <head>
     <title>Form</title>
     <meta charset="UTF-8">
+
+    <!-- Responsive design -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- SEO -->
@@ -23,16 +25,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,200&display=swap"
         rel="stylesheet">
 
-          <!-- Bootstrap CSS v5.2.1 -->
-          <link
-          href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-          rel="stylesheet"
-          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-          crossorigin="anonymous"
-      />
-
     <!-- External CSS -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+
 </head>
 
 <body>
@@ -92,12 +91,6 @@
                         <p class="validation_input" id="validation_password">Şifrenizi girmediniz</p>
                     </div>
 
-                    <!-- GENDER -->
-                    <div class="register_inline">
-                        <input class="form-check-input" type="radio" name="ugender" id="female" checked> <span style="color:black; margin-right:2rem;">Bayan</span> 
-                        <input class="form-check-input" type="radio" name="ugender" id="male"> <span  style="color:black">Erkek</span> 
-                    </div>
-                    
                     <!-- ABILITY -->
                     <div class="register_inline">
                         <!-- <input type="checkbox" name="angular" id="angular" checked>Angular
@@ -108,53 +101,53 @@
                         <input type="checkbox" name="java" id="java">Java
                         <input type="checkbox" name="webservices" id="webservices">Webservices
                    -->
-                        <!-- <input type="list" name="tech">
-                        <datalist id="list">
+                        <i class="my_icon_class  fa-solid fa-list-check"></i>
+                        <input type="text" list="tech" placeholder="Teknolojiler" class="form-control" name="browser">
+                        <datalist id="tech">
                             <option value="Angular">
                             <option value="Html5">
                             <option value="Css3">
-                        </datalist> -->
+                            <option value="Javascript">
+                        </datalist>
+                    </div>
+
+                    <!-- GENDER -->
+                    <div class="register_inline">
+                        <input class="form-check-input" type="radio" name="ugender" id="female" checked> <span
+                            style="color:black; margin-right:2rem;">Bayan</span>
+                        <input class="form-check-input" type="radio" name="ugender" id="male"> <span
+                            style="color:black">Erkek</span>
                     </div>
 
                     <!-- SUBMIT -->
                     <div class="container">
                         <div class="row">
                             <div class="col-sm-12 col-md-6 col-lg-6">
-                                <button 
-                                type="reset" 
-                                class="btn btn-danger rounded mb-2 btn-sm p-2 shadow text-uppercase  border-0" 
-                                name="reset" 
-                                id="reset" 
-                                title="Temizle giriniz">Temizle</button>
+                                <button type="reset"
+                                    class="btn btn-danger rounded mb-2 btn-sm p-2 shadow text-uppercase  border-0"
+                                    name="reset" id="reset" title="Temizle giriniz">Temizle</button>
                             </div>
 
                             <div class="col-sm-12 col-md-6 col-lg-6">
-                                <button 
-                                type="submit" 
-                                class="btn btn-primary btn-sm rounded p-2 shadow  text-uppercase border-0" 
-                                name="submit" 
-                                id="submit" 
-                                title="Gönder giriniz"> Gönder</button>
-                        </div>
-                    </div>  <!-- end bootstrap row -->
-                </div> <!-- end bootstrap container-->
+                                <button type="submit"
+                                    class="btn btn-primary btn-sm rounded p-2 shadow  text-uppercase border-0"
+                                    name="submit" id="submit" title="Gönder giriniz"> Gönder</button>
+                            </div>
+                        </div> <!-- end bootstrap row -->
+                    </div> <!-- end bootstrap container-->
                 </div>
             </form>
         </div>
     </div> <!-- container_register-->
 
- <!-- Bootstrap JavaScript Libraries -->
- <script
- src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
- integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
- crossorigin="anonymous"
-></script>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
 
-<script
- src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
- integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
- crossorigin="anonymous"
-></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
     <!-- End Code -->
 </body>
 
