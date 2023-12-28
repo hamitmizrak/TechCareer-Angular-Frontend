@@ -118,42 +118,87 @@
 
 /////////////////////////////////////////////////
 // Sayısal İşlemler
-let number=44;
-number=44.4252;
-console.log(number);
-console.log("Number: "+ Number(number));
-console.log("parseInt: "+parseInt(number));
-console.log("parseFloat: "+parseFloat(number));
-// NaN 
-// isNaN
-console.log(typeof number);
+// let number=44;
+// number=44.4252;
+// console.log(number);
+// console.log("Number: "+ Number(number));
+// console.log("parseInt: "+parseInt(number));
+// console.log("parseFloat: "+parseFloat(number));
+// // NaN 
+// // isNaN
+// console.log(typeof number);
 
-let bilimsel1=1400000;
-console.log(bilimsel1);
+// let bilimsel1=1400000;
+// console.log(bilimsel1);
 
-let bilimsel2=14E+5;
-console.log(bilimsel2);
+// let bilimsel2=14E+5;
+// console.log(bilimsel2);
 
-let bilimsel3=14E-5;
-console.log(bilimsel3);
+// let bilimsel3=14E-5;
+// console.log(bilimsel3);
 
-// binary(2)
-let binary=0b01010;
-console.log(binary);
+// // binary(2)
+// let binary=0b01010;
+// console.log(binary);
 
-// octal(8)
-let octal=0o7523;
-console.log(octal);
+// // octal(8)
+// let octal=0o7523;
+// console.log(octal);
 
-// hexadecimal(16) 0123456789abcdef
-let hexadecimal=0xff09;
-console.log(hexadecimal);
+// // hexadecimal(16) 0123456789abcdef
+// let hexadecimal=0xff09;
+// console.log(hexadecimal);
 
-const number2=56.123456789;
-console.log(number2);
-console.log(typeof number2);
-console.log(number2.toFixed(3));
-console.log(number2.toPrecision(3));
+// const number2=56.123456789;
+// console.log(number2);
+// console.log(typeof number2);
+// console.log(number2.toFixed(3));
+// console.log(number2.toPrecision(3));
 
 /////////////////////////////////////////////////
 // Metinsel işlemler
+
+// let number1=455
+// let number2=455.41;
+// let str="455.41";
+// let bol=true;
+
+let vocabulary="js ÖĞReniyorum js ";
+console.log(vocabulary);
+console.log(vocabulary.length);
+console.log(vocabulary.trim().length);
+
+console.log(vocabulary.toLowerCase());
+console.log(vocabulary.toUpperCase());
+
+console.log(vocabulary.substring(5));
+console.log(vocabulary.substring(5,8)); // 5<=X<=8-1
+
+console.log(vocabulary.charAt(0)); 
+console.log(vocabulary.indexOf("js")); 
+console.log(vocabulary.lastIndexOf("js")); 
+console.log(vocabulary.includes("js")); 
+
+console.log(vocabulary.replace("js","javascript"));
+console.log(vocabulary.concat("-sona"));
+console.log(vocabulary+"-sona");
+
+console.log(vocabulary.startsWith("js"));
+console.log(vocabulary.endsWith("js"));
+
+// ÖDEV // kullanıcı tarafından girilen bir kelimenin (prompt)
+// let userData= prompt("Lütfen bir şeyler yazınız")  ;
+// S-1) Kaç karakterlidir ? (length)
+// S-2) boşluklar alınarak Kaç karakterlidir ? (trim)
+// S-3) bütün kelimeyi küçük harfle göstermek ? (toLowerCase())
+// S-4) bütün kelimeyi büyük harfle göstermek ? (toUpperCase())
+// S-5) Kullanıcıdan alınan ilk kelimeyle , "javascript" kelimeyle değiştirin. (replace, substring, indexOf)
+// console.log(userData.replace("xxxxxxx"),"javascript");
+// console.log(userData.replace(userData.substring(0,userData.indexOf(" ")),"javascript"));
+// S-6) yazdığınız kelimede "javascript ile mi başlıyor" ? (startsWith()) 
+// S-7) yazdığınız kelimede "javascript ile mi bitiyor" ? (endsWith())
+// S-8) ilk harf nedir  ? (charAt())
+// S-9) girdiğiniz kelimenin sonuna "-ben js öğreniyorum" (concat())
+// S-10) girdiğiniz 0 ile 4 arasındaki indexi ekranda gösterin? (subString())
+///////////////////////////////////////////////////////////////
+
