@@ -203,38 +203,159 @@
 
 ///////////////////////////////////////////////////////////////
 // Function
-// 1 parametresizRetursuz
-function parametresizRetursuz(){
-    console.log("parametresiz Retursuz");
-}
-parametresizRetursuz();
+// // 1 parametresizRetursuz
+// function parametresizRetursuz(){
+//     console.log("parametresiz Retursuz");
+// }
+// parametresizRetursuz();
 
-// 2 parametreliRetursuz
-function parametreliRetursuz(number){
-    console.log("parametreli Retursuz "+(Math.sqrt(number)));
-}
-parametreliRetursuz(25);
+// // 2 parametreliRetursuz
+// function parametreliRetursuz(number){
+//     console.log("parametreli Retursuz "+(Math.sqrt(number)));
+// }
+// parametreliRetursuz(25);
 
-// 3 parametresizReturlu
-function parametresizReturlu(){
-    return Math.pow(2,5);
-}
-let data3=parametresizReturlu();
-console.log(data3);
+// // 3 parametresizReturlu
+// function parametresizReturlu(){
+//     return Math.pow(2,5);
+// }
+// let data3=parametresizReturlu();
+// console.log(data3);
 
-// 4 parametreliReturlu
-function parametreliReturlu(alt,ust){
-    return Math.pow(alt,ust);
-}
-let data4=parametreliReturlu(2,5);
-console.log(data4);
+// // 4 parametreliReturlu
+// function parametreliReturlu(alt,ust){
+//     return Math.pow(alt,ust);
+// }
+// let data4=parametreliReturlu(2,5);
+// console.log(data4);
 
 ///////////////////////////////////////////////////////////////
-// Function
 // Immedia Function
+(function () {
+    console.log("Immedia Function Anonymous")
+})();
+
+(() => {
+    console.log("Immedia Function Arrow")
+})();
+
+// Function
+function normFuction() {
+    console.log("normFuction");
+}
+normFuction()
+
 // Anonymous Function
+let anonymousfunction = function () {
+    console.log("anonymous function");
+}
+anonymousfunction()
+
+
 // Arrows Function
+let arrowfunction = (data) => {
+    console.log("arrow function " + data);
+}
+arrowfunction("asd")
 
 ///////////////////////////////////////////////////////////////
 // Conditional 
+let conditional = (data) => {
+    let number = 5;
+    if (number > 0) {
+        console.log("pozitiftir");
+    } else
+        console.log("negatif");
+}
+conditional();
+
+let ternary = (data) => {
+    let number = 5;
+    const result = (number > 0) ? "pozitiftir" : "negatif";
+    console.log(result);
+}
+ternary()
+
+// Conditional 
+let conditional2 = (data) => {
+    let number = parseInt(Number("4"));
+    if (number == 0) {
+        console.log("0");
+    } else if (number == 1) {
+        console.log("1");
+    } else if (number == 2) {
+        console.log("2");
+    } else if (number == 3) {
+        console.log("3");
+    } else if (number === 4) {
+        console.log("4");
+    } else if (number == 5) {
+        console.log("5");
+    } else {
+        console.log("1<=X<=5 dışında");
+    }
+}
+conditional2();
+
+let conditional3 = (data) => {
+    let number = parseInt(Number("4"));
+    switch (number) {
+        case 0:
+            console.log("0");
+            break;
+        case 1:
+            console.log("1");
+            break;
+        case 3:
+            console.log("3");
+            break;
+        case 2:
+            console.log("2");
+            break;
+        case 4:
+            console.log("4");
+            break;
+        case 5:
+            console.log("5");
+            break;
+        default:
+            console.log("1<=X<=5 dışında");
+            break;
+    }
+}
+conditional3();
+
+///////////////////////////////////////////////////////////////
 // Loop
+let forLoop = () => {
+    for (let i = 1; i <=5; i++) {
+        window.document.writeln("i: "+i+"<br/>");
+    }
+    //for(;;){}
+}
+forLoop();
+window.document.writeln("*************** <br/>");
+
+let whileLoop = () => {
+    let i = 1;
+    while ( i <=5) {
+        window.document.writeln("i: "+i+"<br/>");
+        i=i+1;
+    }
+    //while(true){}
+}
+whileLoop();
+
+window.document.writeln("*************** <br/>");
+let doWhileLoop = () => {
+    let i = 1;
+    do{
+       window.document.writeln("i: "+i+"<br/>");
+        i=i+1; 
+    }
+    while ( i <=5) ;
+    //while(true){}
+}
+doWhileLoop();
+
+///////////////////////////////////////////////////////////////
