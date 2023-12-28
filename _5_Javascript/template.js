@@ -163,28 +163,28 @@
 // let str="455.41";
 // let bol=true;
 
-let vocabulary="js ÖĞReniyorum js ";
-console.log(vocabulary);
-console.log(vocabulary.length);
-console.log(vocabulary.trim().length);
+// let vocabulary="js ÖĞReniyorum js ";
+// console.log(vocabulary);
+// console.log(vocabulary.length);
+// console.log(vocabulary.trim().length);
 
-console.log(vocabulary.toLowerCase());
-console.log(vocabulary.toUpperCase());
+// console.log(vocabulary.toLowerCase());
+// console.log(vocabulary.toUpperCase());
 
-console.log(vocabulary.substring(5));
-console.log(vocabulary.substring(5,8)); // 5<=X<=8-1
+// console.log(vocabulary.substring(5));
+// console.log(vocabulary.substring(5,8)); // 5<=X<=8-1
 
-console.log(vocabulary.charAt(0)); 
-console.log(vocabulary.indexOf("js")); 
-console.log(vocabulary.lastIndexOf("js")); 
-console.log(vocabulary.includes("js")); 
+// console.log(vocabulary.charAt(0)); 
+// console.log(vocabulary.indexOf("js")); 
+// console.log(vocabulary.lastIndexOf("js")); 
+// console.log(vocabulary.includes("js")); 
 
-console.log(vocabulary.replace("js","javascript"));
-console.log(vocabulary.concat("-sona"));
-console.log(vocabulary+"-sona");
+// console.log(vocabulary.replace("js","javascript"));
+// console.log(vocabulary.concat("-sona"));
+// console.log(vocabulary+"-sona");
 
-console.log(vocabulary.startsWith("js"));
-console.log(vocabulary.endsWith("js"));
+// console.log(vocabulary.startsWith("js"));
+// console.log(vocabulary.endsWith("js"));
 
 // ÖDEV // kullanıcı tarafından girilen bir kelimenin (prompt)
 // let userData= prompt("Lütfen bir şeyler yazınız")  ;
@@ -200,5 +200,41 @@ console.log(vocabulary.endsWith("js"));
 // S-8) ilk harf nedir  ? (charAt())
 // S-9) girdiğiniz kelimenin sonuna "-ben js öğreniyorum" (concat())
 // S-10) girdiğiniz 0 ile 4 arasındaki indexi ekranda gösterin? (subString())
-///////////////////////////////////////////////////////////////
 
+///////////////////////////////////////////////////////////////
+// Function
+// 1 parametresizRetursuz
+function parametresizRetursuz(){
+    console.log("parametresiz Retursuz");
+}
+parametresizRetursuz();
+
+// 2 parametreliRetursuz
+function parametreliRetursuz(number){
+    console.log("parametreli Retursuz "+(Math.sqrt(number)));
+}
+parametreliRetursuz(25);
+
+// 3 parametresizReturlu
+function parametresizReturlu(){
+    return Math.pow(2,5);
+}
+let data3=parametresizReturlu();
+console.log(data3);
+
+// 4 parametreliReturlu
+function parametreliReturlu(alt,ust){
+    return Math.pow(alt,ust);
+}
+let data4=parametreliReturlu(2,5);
+console.log(data4);
+
+///////////////////////////////////////////////////////////////
+// Function
+// Immedia Function
+// Anonymous Function
+// Arrows Function
+
+///////////////////////////////////////////////////////////////
+// Conditional 
+// Loop
