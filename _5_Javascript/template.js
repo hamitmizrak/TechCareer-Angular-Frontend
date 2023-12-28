@@ -452,9 +452,9 @@ const callBackFunction = () => {
 // promise
 const promiseFunction = () => {
     const isLogin = true;
-    //const isCreated = 201;
+    const isCreated = 201;
     let pro = new Promise((resolve, reject) => {
-        if (isLogin)
+        if (isLogin && isCreated==201)
             resolve("olumlu sonuç");
         else
             reject("olumsuz sonuç");
@@ -467,10 +467,12 @@ const promiseFunction = () => {
 }
 promiseFunction()
 
-
-// asyc-await
 ///////////////////////////////////////////////////////////////
 // Diziler
+///////////////////////////////////////////////////////////////
+// Callback Function (ES6)
+// Promise(ES7)
+// asyc-await(ES8)
 ///////////////////////////////////////////////////////////////
 // Object
 ///////////////////////////////////////////////////////////////
