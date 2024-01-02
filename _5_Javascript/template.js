@@ -526,7 +526,7 @@ let arrayFunction3 = () => {
     });
 
 
-    // FOREACH
+    //// FOREACH
     document.writeln("<br/>*******************************<br/>");
     //  forEach(callbackfn: (value: T, index: number, array: T[]) => void, thisArg?: any): void;
     array.shift();
@@ -536,25 +536,55 @@ let arrayFunction3 = () => {
     });
 
     //// SORT
-    document.writeln("<br/>*******************************<br/>");
-    array.sort().forEach(value => {
-        document.writeln(`${value} `);
-    });
+    // document.writeln("<br/>*******************************<br/>");
+    // array.sort().forEach(value => {
+    //     document.writeln(`${value} `);
+    // });
 
     //// REVERSE
-    document.writeln("<br/>*******************************<br/>");
-    array.reverse().forEach(value => {
-        document.writeln(`${value} `);
-    });
+    // document.writeln("<br/>*******************************<br/>");
+    // array.reverse().forEach(value => {
+    //     document.writeln(`${value} `);
+    // });
 
     // document.writeln("<br/>*******************************<br/>");
     // array.sort().reverse().forEach(value => {
     //     document.writeln(`${value} `);
     // });
 
+    // document.writeln("<br/>*******************************<br/>");
+    // delete array[0]
+    // array.forEach(value => {
+    //     console.log(`${value} `);
+    // });
+}
+//arrayFunction3();
+
+// Delete
+let arrayFunction4 = () => {
+    let array = arrayFunction2();
+    console.log(array);
+
+    // belirtilen indisteki elemanı siler yerine undedined ekler
+    delete array[0];
+    console.log(array);
+}
+//arrayFunction4();
+
+// String
+let arrayFunction5 = () => {
+    let array = arrayFunction2();
+    console.log(array);
+
+    // toString() => Diziyi String'e çevirmek için kullanıyoruz
+    let arrayToString = array.toString();
+    console.log(arrayToString);
+    console.log(arrayToString.substring(0, 4));
+
+    // Join
 
 }
-arrayFunction3();
+arrayFunction5();
 ///////////////////////////////////////////////////////////////
 // Callback Function (ES6)
 // Promise(ES7)
