@@ -569,6 +569,7 @@ let arrayFunction4 = () => {
     // belirtilen indisteki elemanı siler yerine undedined ekler
     delete array[0];
     console.log(array);
+
 }
 //arrayFunction4();
 
@@ -584,7 +585,7 @@ let arrayFunction5 = () => {
     console.log("******************");
 
     // join() => Diziyi String'e çevirmek için kullanıyoruz
-    let arrayData=array.join(" ");
+    let arrayData = array.join(" ");
     console.log(arrayData);
 }
 //arrayFunction5();
@@ -596,10 +597,10 @@ let arrayFunction6 = () => {
     console.log(array);
 
     // Slice
-    let sliceArray=array.slice(2);
+    let sliceArray = array.slice(2);
     console.log(sliceArray);
 
-    let sliceArray2=array.slice(0,2);
+    let sliceArray2 = array.slice(0, 2);
     console.log(sliceArray2);
 }
 //arrayFunction6();
@@ -623,14 +624,51 @@ let arrayFunction7 = () => {
     // 2: çıkarma 
     // array.splice(0,3);
     // console.log(array);
-    
+
     // 2: Başlama indisi
     // 0: Ekleme
     // 2,3: eklenecek sayılar
-     array.splice(2,0,2,3);
-     console.log(array);
+    array.splice(2, 0, 2, 3);
+    console.log(array);
 }
-arrayFunction7();
+//arrayFunction7();
+
+// Filter, map
+let arrayFunction8 = () => {
+    let array = arrayFunction2();
+    array.sort()
+    console.log(array);
+
+    //  filter<S extends T>(predicate: (value: T, index: number, array: T[]) => value is S, thisArg?: any): S[];
+    // array.filter((response) => { 
+    //     return response>=5;
+    // }).forEach(value => {
+    //     console.log(`${value} `);
+    // });
+
+    //  filter<S extends T>(predicate: (value: T, index: number, array: T[]) => value is S, thisArg?: any): S[];
+    //    let mapResult= array.map((response) => {
+    //         return response = response * 2;
+    //     });
+    //     console.log(mapResult);
+
+    //     mapResult.forEach(value => {
+    //         console.log(`${value} `);
+    //     });
+
+    // Her bir değişkendeki sadece çift olan sayıları alın (filter)
+    // sonrasında bu sayılara 5 ekleyin (map)
+    // sonrasında bu sayıları ekranda gösterin (forEach)
+    array.filter((response) => {
+        return response % 2 == 0;
+    }).map((response) => {
+        return response += 5;
+    }).forEach(value => {
+        console.log(`${value} `);
+    });
+}
+arrayFunction8();
+
 
 ///////////////////////////////////////////////////////////////
 // Object
