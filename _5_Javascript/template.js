@@ -705,7 +705,8 @@ let objectData = () => {
             age: 20,
         }, 
         result:function(){
-            console.log("Function çalıştı");
+            console.log(this.surname+" Function çalıştı");
+            //console.log(person.surname+"Function çalıştı");
             //return surname+" "+isLogin;
         }
     }
@@ -716,12 +717,32 @@ let objectData = () => {
     console.log(typeof person.isLogin);
     console.log("*********************");
     console.log(person.name);
-    console.log(person["name"]);
+    console.log(person["name"]); //nested calling
     console.log(person.language.name);
     person.result();
+
+    // object Literal
+    person.number=44;
+    console.log(person.number);
+
+    // diziyi => String'e (toString() veya join)
+    console.log( person.array );
+    console.log( typeof person.array );
+    console.log( typeof person.language );
+    let arrayToString=person.array.toString();
+    console.log(arrayToString);
+    let arrayToString2=person.array.join(",");
+    console.log(arrayToString2);
+
+    // String'i => Diziye çevir (split())
+    let stringToArray=arrayToString.split(",");
+    console.log(stringToArray);
+
+    // JSON toString,parse 
+
 }
 
-objectData()
+objectData();
 ///////////////////////////////////////////////////////////////
 // DOM
 // Event
