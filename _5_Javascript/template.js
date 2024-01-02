@@ -587,7 +587,38 @@ let arrayFunction5 = () => {
     let arrayData=array.join(" ");
     console.log(arrayData);
 }
-arrayFunction5();
+//arrayFunction5();
+
+// slice, splice
+// Diziyi String'e çevirmek
+let arrayFunction6 = () => {
+    let array = arrayFunction2();
+    console.log(array);
+
+    // Slice
+    let sliceArray=array.slice(2);
+    console.log(sliceArray);
+
+    let sliceArray2=array.slice(0,2);
+    console.log(sliceArray2);
+}
+//arrayFunction6();
+
+
+// slice, splice
+// Diziyi String'e çevirmek
+let arrayFunction7 = () => {
+    let array = arrayFunction2();
+    console.log(array);
+
+    // Splice
+    console.log(array);
+    let spliceArray=array.splice(0,2);
+    console.log(spliceArray);
+ 
+}
+arrayFunction6();
+
 ///////////////////////////////////////////////////////////////
 // Callback Function (ES6)
 // Promise(ES7)
