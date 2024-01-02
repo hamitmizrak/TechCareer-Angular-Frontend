@@ -605,19 +605,34 @@ let arrayFunction6 = () => {
 //arrayFunction6();
 
 
-// slice, splice
+// slice (Original Array'i bozmaz)
+// splice (Original Array'i bozar)
 // Diziyi String'e çevirmek
 let arrayFunction7 = () => {
     let array = arrayFunction2();
     console.log(array);
 
     // Splice
-    console.log(array);
-    let spliceArray=array.splice(0,2);
-    console.log(spliceArray);
+    // array.splice(0,2);
+    // console.log(array);
+
+    // array.splice(2,3);
+    // console.log(array);
+
+    // 0: başlama indisi
+    // 2: çıkarma 
+    // array.splice(0,3);
+    // console.log(array);
+    
+    // 2: Başlama indisi
+    // 0: Ekleme
+    // 2,3: eklenecek sayılar
+     array.splice(2,0,2,3);
+     console.log(array);
+
  
 }
-arrayFunction6();
+arrayFunction7();
 
 ///////////////////////////////////////////////////////////////
 // Callback Function (ES6)
