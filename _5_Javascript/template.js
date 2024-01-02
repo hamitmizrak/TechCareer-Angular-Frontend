@@ -710,6 +710,7 @@ let objectData = () => {
             //return surname+" "+isLogin;
         }
     }
+
     console.log("*********************");
     console.log(person);
     console.log("*********************");
@@ -738,8 +739,13 @@ let objectData = () => {
     let stringToArray=arrayToString.split(",");
     console.log(stringToArray);
 
-    // JSON toString,parse 
+    // JSON toString, parse 
+    let objectToString=JSON.stringify(person);
+    console.log(objectToString);
+    console.log(objectToString.substring(0,3));
 
+    const data=JSON.parse(objectToString);
+    console.log(data);
 }
 
 objectData();
