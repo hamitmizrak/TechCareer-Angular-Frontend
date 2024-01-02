@@ -522,7 +522,8 @@ let arrayFunction3 = () => {
     array.pop();
     array.forEach((value, index, array) => {
         //document.writeln(value + "=> " + index + "=> " + array + "<br/>");
-        document.writeln(`${value} `);
+        //document.writeln(`${value} => ${index} => ${array}`);
+        document.writeln(`${value}`);
     });
 
 
@@ -571,7 +572,7 @@ let arrayFunction4 = () => {
 }
 //arrayFunction4();
 
-// String
+// Diziyi String'e çevirmek
 let arrayFunction5 = () => {
     let array = arrayFunction2();
     console.log(array);
@@ -580,9 +581,11 @@ let arrayFunction5 = () => {
     let arrayToString = array.toString();
     console.log(arrayToString);
     console.log(arrayToString.substring(0, 4));
+    console.log("******************");
 
-    // Join
-
+    // join() => Diziyi String'e çevirmek için kullanıyoruz
+    let arrayData=array.join(" ");
+    console.log(arrayData);
 }
 arrayFunction5();
 ///////////////////////////////////////////////////////////////
