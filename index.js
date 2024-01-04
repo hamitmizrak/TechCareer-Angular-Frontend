@@ -36,7 +36,7 @@ let array = () => {
 }
 
 // OBJECT
-let person = () => {
+const person = () => {
     const value = {
         "name": "Hamit",
         "surname": "Mızrak",
@@ -48,7 +48,7 @@ let person = () => {
 
 // 1- ES5(2009) "use strict";
 // 2- ES5(2009) String Access
-let stringAccessFunction = () => {
+const stringAccessFunction = () => {
     let data = str();
     console.log(data);
     console.log(data.charAt(0));
@@ -58,7 +58,7 @@ let stringAccessFunction = () => {
 //console.log("OK");
 
 //3- ES5(2009) multiline
-let multilineFunction = () => {
+const multilineFunction = () => {
     let value = "1.satır\n2.satır\n3.satır";
     console.log(value);
 
@@ -74,7 +74,7 @@ let multilineFunction = () => {
 //multilineFunction()
 
 //4- ES5(2009) Date.now();
-let dateNowFunction = () => {
+const dateNowFunction = () => {
     // 1000 ms= 1sn
     let currentTimeMillis = Date.now();
     console.log(currentTimeMillis);
@@ -82,7 +82,7 @@ let dateNowFunction = () => {
 //dateNowFunction()
 
 //5- ES5(2009) trim();
-let trimFunction = () => {
+const trimFunction = () => {
     let data = str();
     console.log(data);
     console.log(data.length);
@@ -92,7 +92,7 @@ let trimFunction = () => {
 //trimFunction()
 
 // 6-7- ES5(2009) JSON.stringfy() JSON.parse()
-let JsonFunction = () => {
+const JsonFunction = () => {
     let data = person();
     let stringData = JSON.stringify(data);
     console.log(stringData);
@@ -106,7 +106,7 @@ let JsonFunction = () => {
 // forEach: Void dönderir
 // map<U>(callbackfn: (value: T, index: number, array: T[]) => U, thisArg?: any): U[];
 // map    : Dizi Dönderir
-let mapFilterForeachFunction = () => {
+const mapFilterForeachFunction = () => {
     let data = array();
     console.log(data);
     data.forEach((response)=>{
@@ -130,39 +130,39 @@ mapFilterForeachFunction()
 
 
 // 11- ES5(2009) Reduce()
-let reduceFunction = () => {
+const reduceFunction = () => {
 
 }
 reduceFunction()
 
 // 12- ES5(2009)  ReduceRight()
-let reduceRightFunction = () => {
+const reduceRightFunction = () => {
 
 }
 reduceRightFunction()
 
 // 13-14- ES5(2009)  indexOf() lastIndexOf()
-let indexOfLastIndexOfFunction = () => {
+const indexOfLastIndexOfFunction = () => {
 
 }
 indexOfLastIndexOfFunction()
 
 // 15- ES5(2009) every()
-let everyFunction = () => {
+const everyFunction = () => {
 
 }
 everyFunction()
 
 
 // 16- ES5(2009) every() some()
-let someFunction = () => {
+const someFunction = () => {
 
 }
 someFunction()
 
 
 // 17- ES5(2009) every() getter and setter
-let getterAndSetterFunction = () => {
+const getterAndSetterFunction = () => {
 
 }
 getterAndSetterFunction()
