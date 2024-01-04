@@ -73,7 +73,6 @@ let multilineFunction = () => {
 }
 //multilineFunction()
 
-
 //4- ES5(2009) Date.now();
 let dateNowFunction = () => {
     // 1000 ms= 1sn
@@ -81,7 +80,6 @@ let dateNowFunction = () => {
     console.log(currentTimeMillis);
 }
 //dateNowFunction()
-
 
 //5- ES5(2009) trim();
 let trimFunction = () => {
@@ -92,7 +90,6 @@ let trimFunction = () => {
     console.log(data.trim().length);
 }
 //trimFunction()
-
 
 // 6-7- ES5(2009) JSON.stringfy() JSON.parse()
 let JsonFunction = () => {
@@ -107,8 +104,7 @@ let JsonFunction = () => {
 // 8-9-10- ES5(2009) ForEach() Map() Filter()
 // forEach(callbackfn: (value: T, index: number, array: T[]) => void, thisArg?: any): void;
 // forEach: Void dönderir
-
-//map<U>(callbackfn: (value: T, index: number, array: T[]) => U, thisArg?: any): U[];
+// map<U>(callbackfn: (value: T, index: number, array: T[]) => U, thisArg?: any): U[];
 // map    : Dizi Dönderir
 let mapFilterForeachFunction = () => {
     let data = array();
@@ -133,17 +129,43 @@ let mapFilterForeachFunction = () => {
 mapFilterForeachFunction()
 
 
-// Reduce()
-// ReduceRight()
+// 11- ES5(2009) Reduce()
+let reduceFunction = () => {
 
-// indexOf()
-// lastIndexOf()
+}
+reduceFunction()
 
-// every()
-// some()
+// 12- ES5(2009)  ReduceRight()
+let reduceRightFunction = () => {
 
-// getter and setter
+}
+reduceRightFunction()
 
+// 13-14- ES5(2009)  indexOf() lastIndexOf()
+let indexOfLastIndexOfFunction = () => {
+
+}
+indexOfLastIndexOfFunction()
+
+// 15- ES5(2009) every()
+let everyFunction = () => {
+
+}
+everyFunction()
+
+
+// 16- ES5(2009) every() some()
+let someFunction = () => {
+
+}
+someFunction()
+
+
+// 17- ES5(2009) every() getter and setter
+let getterAndSetterFunction = () => {
+
+}
+getterAndSetterFunction()
 
 
 ///////////////////////////////////////////////////////////////
