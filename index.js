@@ -305,10 +305,10 @@ const restParameterFunction = () => {
 
 // 6- ES6 (2015)includes()
 const includeFunction = () => {
-    const text=str();
+    const text = str();
     console.log(text);
     //console.log(text.includes("ecmascript"));
-    let search="ecmascript";
+    let search = "ecmascript";
     let result = (text.includes(search)) ? `${search} bulundu` : `${search} yoktur`;
     console.log(result);
 }
@@ -316,17 +316,47 @@ const includeFunction = () => {
 
 //7- ES6 (2015) startsWith() endsWith()
 const startsEndsFunction = () => {
-    const text=str();
+    const text = str();
     console.log(text);
     console.log(text.startsWith("ecmascript"));
     console.log(text.endsWith(" "));
 }
-startsEndsFunction();
+//startsEndsFunction();
 
-// 9- ES6 (2015) Default Parameters
+// 8- ES6 (2015) Default Parameters
+const defaultParameterFunction = () => {
+    function hello(data = "Neden merhaba demedin") {
+        console.log("Merhabalar: " + data);
+    }
+    hello();
+}
+//defaultParameterFunction();
 
-// 8- ES6 (2015) Class
+// 9- ES6 (2015) Class
+const classFunction = () => {
 
+    // CLASS
+    class Computer {
+        // Constructor (Parametreli)
+        constructor(computerName, mainCard) {
+            this.computerName = computerName;
+            this.mainCard = mainCard;
+        }
+
+        // Method
+        computerProperties() {
+            console.log("Name: " + this.computerName + " Card: " + this.mainCard);
+        }
+    } // end Class
+
+    // Instance
+    let data1 = new Computer("Msi", "main card");
+    data1.computerProperties();
+
+    let data2 = new Computer("Asus", "main card");
+    data2.computerProperties();
+}
+classFunction();
 
 
 ///////////////////////////////////////////////////////////////
