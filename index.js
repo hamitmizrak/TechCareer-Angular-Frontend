@@ -236,11 +236,15 @@ const setterFunction = () => {
 // for of 
 // The Operator (Spread Operator)
 // Function Rest Parameter 
-// Class 
+// Include
 // startsWith() endsWith()
+// Default Parameters
+// Class 
+// Promise
 
 
-// let, const 
+
+// 1- ES6 (2015) let, const 
 const letConstVarFunction = () => {
 
     // Global Scope
@@ -263,8 +267,8 @@ const letConstVarFunction = () => {
 }
 //letConstVarFunction();
 
-// arrow Function
-// for of
+// 2- ES6 (2015) arrow Function
+// 3- ES6 (2015) for of
 let arrowForOf = () => {
     for (let temp of array()) {
         console.log(temp);
@@ -272,7 +276,7 @@ let arrowForOf = () => {
 }
 //arrowForOf()
 
-// The Operator (Spread Operator)
+// 4- ES6 (2015) The Operator (Spread Operator)
 let spreadOpetorFunction = () => {
     let data = array();
     console.log(data);
@@ -285,20 +289,42 @@ let spreadOpetorFunction = () => {
 }
 //spreadOpetorFunction()
 
-// Function Rest Parameter
+// 5- ES6 (2015) Function Rest Parameter
 const restParameterFunction = () => {
     function showing(...data) {
         for (let temp of data) {
             console.log(temp);
         }
     }
-    showing(1,2,3,4,5)
+    //showing(1,2,3,4,5);
+    //showing(array());
+    showing(...array());
 }
-restParameterFunction();
+//restParameterFunction();
+
+// 6- ES6 (2015)includes()
+const includeFunction = () => {
+    const text=str();
+    console.log(text);
+    //console.log(text.includes("ecmascript"));
+    let search="ecmascript";
+    let result = (text.includes(search)) ? `${search} bulundu` : `${search} yoktur`;
+    console.log(result);
+}
+//includeFunction();
+
+//7- ES6 (2015) startsWith() endsWith()
+const startsEndsFunction = () => {
+    const text=str();
+    console.log(text);
+    console.log(text.startsWith("ecmascript"));
+    console.log(text.endsWith(" "));
+}
+startsEndsFunction();
+
+// 8- ES6 (2015) Class
 
 
-// Class
-// startsWith() endsWith()
 
 ///////////////////////////////////////////////////////////////
 // Typescript
