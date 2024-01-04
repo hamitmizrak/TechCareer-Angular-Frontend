@@ -31,7 +31,7 @@ let str = () => {
 
 // ARRAY
 let array = () => {
-    const value = [1, 2, 3, 4, 5, 6]
+    const value = [1, 2, 3, 4, 5, 6, 2, -1]
     return value;
 }
 
@@ -109,64 +109,123 @@ const JsonFunction = () => {
 const mapFilterForeachFunction = () => {
     let data = array();
     console.log(data);
-    data.forEach((response)=>{
-        console.log(response*2);
+    data.forEach((response) => {
+        console.log(response * 2);
     })
     console.log("*******");
 
-   let mapData= data.map((response)=>{
-        return response*2;
+    let mapData = data.map((response) => {
+        return response * 2;
     })
     console.log(mapData);
     console.log("*******");
 
-    let filterData= data.filter(response=>{
-        return response%2===0;
+    let filterData = data.filter(response => {
+        return response % 2 === 0;
     })
     console.log(filterData);
     console.log("*******");
 }
-mapFilterForeachFunction()
+//mapFilterForeachFunction()
 
 
 // 11- ES5(2009) Reduce()
 const reduceFunction = () => {
+    let data = array();
+    //Normal Toplama
+    let sum = 0;
+    for (let i = 0; i < data.length; i++) {
+        sum = sum + data[i];
+    }
+    //console.log("Toplam: " + sum);
 
+    // Reduce 1 2 3 4 5 6 (Soldan toplayarak ilerleme yapıyor)
+    let sum2 = data.reduce((previousValue, currentValue) => {
+        return previousValue + currentValue;
+    }, 0);
+    console.log("Reduce Toplam: " + sum2);
+
+    //console.log(data);
 }
-reduceFunction()
+//reduceFunction()
 
 // 12- ES5(2009)  ReduceRight()
 const reduceRightFunction = () => {
-
+    let data = array();
+    // Reduce 1 2 3 4 5 6
+    let sum2 = data.reduceRight((previousValue, currentValue) => {
+        return previousValue + currentValue;
+    }, 0);
+    console.log("Reduce Right Toplam: " + sum2);
 }
-reduceRightFunction()
+//reduceRightFunction()
 
+//  1 2 3 4 5 6 2
 // 13-14- ES5(2009)  indexOf() lastIndexOf()
 const indexOfLastIndexOfFunction = () => {
+    let data = array();
+    let indexData = data.indexOf(2);
+    console.log(indexData);
 
+    let lastIndexData = data.lastIndexOf(2);
+    console.log(lastIndexData);
 }
-indexOfLastIndexOfFunction()
+//indexOfLastIndexOfFunction()
 
-// 15- ES5(2009) every()
+// 15- ES5(2009) every() : Hepsi Şartı sağlamalı
 const everyFunction = () => {
-
+    const data = array();
+    // every<S extends T>(predicate: (value: T, index: number, array: T[]) => value is S, thisArg?: any): this is S[];
+    let everyData = data.every((response) => {
+        return response > 0;
+    });
+    let everyIndexData = (everyData) ? "Hepsi Sıfırdan Büyüktür" : "En az 1 tanesi Sıfırdan Küçüktür";
+    console.log(everyIndexData);
 }
-everyFunction()
+//everyFunction()
 
 
-// 16- ES5(2009) every() some()
+// 16- ES5(2009)  some(): Tek bir Şartı sağlamalı
 const someFunction = () => {
-
+    const data = array();
+    // every<S extends T>(predicate: (value: T, index: number, array: T[]) => value is S, thisArg?: any): this is S[];
+    let everyData = data.some((response) => {
+        return response > 0;
+    });
+    let everyIndexData = (everyData) ? "En az 1 tanesi sıfırdan büyüktür" : "Hepsi Sıfırdan Küçüktür";
+    console.log(everyIndexData);
 }
-someFunction()
+//someFunction()
 
 
 // 17- ES5(2009) every() getter and setter
-const getterAndSetterFunction = () => {
+const getterFunction = () => {
+    const value = {
+        _username: "User data 44",
 
+        // GET 
+        get getterUsername() {
+            return this._username;
+        } //end get
+    } //end object
+    console.log(value.getterUsername);
 }
-getterAndSetterFunction()
+getterFunction()
 
+
+const setterFunction = () => {
+    const value = {
+        _username: "",
+
+        // SET 
+        set setterUsername(param) {
+            this._username=param;
+        } //end get
+    } //end object
+    value.setterUsername="Malatya";
+    console.log(value._username);
+}
+setterFunction()
 
 ///////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////
