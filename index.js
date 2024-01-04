@@ -322,6 +322,8 @@ const startsEndsFunction = () => {
 }
 startsEndsFunction();
 
+// 9- ES6 (2015) Default Parameters
+
 // 8- ES6 (2015) Class
 
 
