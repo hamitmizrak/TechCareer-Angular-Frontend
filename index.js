@@ -5,23 +5,23 @@
 // ES5
 "use strict";
 
-// "use strict";
-// String Access 
-// multiline
-// Date.now();
-// trim();
-// JSON.stringfy()
-// JSON.parse()
-// ForEach()
-// Map()
-// Filter
-// Reduce()
-// ReduceRight()
-// indexOf()
-// lastIndexOf()
-// every()
-// some()
-// getter and setter
+// "use strict"; => Katı mod 
+// String Access  => charAt yerine kullanıyoruz
+// multiline  => readebility için
+// Date.now(); => şimdiki zamanı milisaniye cinsinden göstermek için
+// trim(); => başında veya sonunda boşluklardan arındırmak için
+// JSON.stringfy()  => Objeyi String'e çevirmek
+// JSON.parse() => String yapıyı JSON çevirmek için
+// ForEach() => void döndürür her bir elemana erişir.
+// Map() => Dizi döndürür her bir elemana erişir
+// Filter => dizide isteiğimiz sonuçları listelemek için
+// Reduce()  => dizide genel bir işlem yapsın tek bir sonuç için (Soldan sağa doğru)
+// ReduceRight() => dizide genel bir işlem yapsın tek bir sonuç için (sağdan sola doğru)
+// indexOf() => Dizidee solda arama yapsın bulduğunda index numarası döndersin yoksa -1
+// lastIndexOf() => Dizidee sağdan sola arama yapsın bulduğunda index numarası döndersin yoksa -1
+// every() => Dizide bizim belirlediğimiz şarta göre hepsi sağlıyor mu (:boolean)
+// some() => Dizide bizim belirlediğimiz sadece 1 tek şarta göre hepsi sağlıyor mu (:boolean)
+// getter and setter => OOP getter and setter için kullanıyoruz.
 
 // VOCABULARY
 let str = () => {
@@ -231,15 +231,16 @@ const setterFunction = () => {
 ///////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////
 // ES6
-// let, const 
-// arrow Function 
-// for of 
-// The Operator (Spread Operator)
-// Function Rest Parameter 
-// Include
-// startsWith() endsWith()
-// Default Parameters
-// Class 
+// let, const  => Data Types
+// arrow Function  => normal Function > Anonymous Function> Arrow Function 
+// for of  => Dizide Döngü
+// The Operator (Spread Operator) => Dizi veya object verileri almak için 
+// Function Rest Parameter  => istediğmiiz kadar argüman vermek için 
+// Include => Search (: boolean) içinde böyle bir kelime var mı ?
+// startsWith() endsWith() => ile mi başlıyor , ile mi bitiyor 
+// Default Parameters => Eğer kullanıcı veri girmezse default değer gelsin
+// Class ==> OOP kullanıdğımız Class'ı anlamak için
+// Map, Set (Data Structures) => Javada Collection karşılıktır.
 // Promise
 
 
