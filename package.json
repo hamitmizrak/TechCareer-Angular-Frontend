@@ -4,6 +4,8 @@
   "description": "[GitHub] (https://github.com/hamitmizrak/TechCareer-Angular-Frontend)",
   "main": "index.js",
   "scripts": {
+    "nodemon": "nodemon index.js",
+    "nodemon_q": "nodemon -q index.js",
     "watch": "npx tailwindcss -i ./src/input.css -o ./style.css --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -12,5 +14,9 @@
   "license": "ISC",
   "devDependencies": {
     "tailwindcss": "^3.4.0"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodemon": "^3.0.2"
   }
 }
