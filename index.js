@@ -210,7 +210,7 @@ const getterFunction = () => {
     } //end object
     console.log(value.getterUsername);
 }
-getterFunction()
+//getterFunction()
 
 
 const setterFunction = () => {
@@ -219,26 +219,93 @@ const setterFunction = () => {
 
         // SET 
         set setterUsername(param) {
-            this._username=param;
+            this._username = param;
         } //end get
     } //end object
-    value.setterUsername="Malatya";
+    value.setterUsername = "Malatya";
     console.log(value._username);
 }
-setterFunction()
+//setterFunction()
 
 ///////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////
 // ES6
+// let, const 
+// arrow Function 
+// for of 
+// The Operator (Spread Operator)
+// Function Rest Parameter 
+// Class 
+// startsWith() endsWith()
 
-///////////////////////////////////////////////////////////////
-// Callback Function (ES6)
-// Promise(ES7)
-// asyc-await(ES8)
+
+// let, const 
+const letConstVarFunction = () => {
+
+    // Global Scope
+    var varData = 44;
+    console.log(varData);
+
+    var varData = 23;
+    console.log(varData);
+
+    // Local Scope
+    let letData = 11;
+    console.log(letData);
+    letData = 22;
+    console.log(letData);
+
+    const constData = 33;
+    console.log(constData);
+    // constData = 44;
+    // console.log(constData);
+}
+//letConstVarFunction();
+
+// arrow Function
+// for of
+let arrowForOf = () => {
+    for (let temp of array()) {
+        console.log(temp);
+    }
+}
+//arrowForOf()
+
+// The Operator (Spread Operator)
+let spreadOpetorFunction = () => {
+    let data = array();
+    console.log(data);
+
+    let data2 = [7, 8, 9];
+    console.log(data2);
+    console.log("**********");
+    let data3 = [...data, ...data2, 44, 23];
+    console.log(data3);
+}
+//spreadOpetorFunction()
+
+// Function Rest Parameter
+const restParameterFunction = () => {
+    function showing(...data) {
+        for (let temp of data) {
+            console.log(temp);
+        }
+    }
+    showing(1,2,3,4,5)
+}
+restParameterFunction();
+
+
+// Class
+// startsWith() endsWith()
 
 ///////////////////////////////////////////////////////////////
 // Typescript
+
+// Callback Function (ES6)
+// Promise(ES7)
+// asyc-await(ES8)
 
 ///////////////////////////////////////////////////////////////
 // Zamanımız oldukca one page projesine başla
